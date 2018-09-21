@@ -1,0 +1,13 @@
+package dupont;
+import Pasquier.*;
+
+public class Cercle extends FormeGeometrique{
+	double rayon;
+	
+public double Perimetre() {
+	return 2* Math.PI * rayon;
+}
+public double Surface() {
+	return  Math.PI * rayon*rayon;
+}
+}

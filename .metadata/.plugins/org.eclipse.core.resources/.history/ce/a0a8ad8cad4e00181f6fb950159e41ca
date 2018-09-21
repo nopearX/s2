@@ -1,0 +1,36 @@
+package partie2;
+
+import java.util.Scanner;
+
+public class Employe extends salarie {
+	public void verserSalaire() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("veuillez choisir le mode de transaction [1 pour cheque] [2 pour transaction]");
+		int choix = sc.nextInt();
+		if (choix == 1)
+		{
+			Scanner nm = new Scanner(System.in);
+			System.out.println("Veuillez choisir le destinataire");
+			String nom = nm.nextLine();
+			if (nom == tableau(0))
+			System.out.println("Versement de salaire sur compte externe de :" + nom);
+		}
+		else if (choix == 2)
+		{
+			 
+		}
+		else System.out.println("Valeur non correcte recommencer");
+		
+	}	
+	
+	String nomEmploye;
+	String prenomEmploye;
+	int nbCompteemploye;
+	
+	//Constructeur
+	public Employe(String nom,String prenom, int nbcompte) {
+		nomEmploye = nom;
+		prenomEmploye = prenom;
+		nbCompteemploye = nbcompte;
+	}
+}

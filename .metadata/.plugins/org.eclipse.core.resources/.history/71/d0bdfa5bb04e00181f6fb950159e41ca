@@ -1,0 +1,31 @@
+package partie2;
+
+import java.util.Scanner;
+
+public class Employe extends salarie {
+	public void verserSalaire() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Vous allez envoyer un cheque");
+
+	
+			Scanner nm = new Scanner(System.in);
+			System.out.println("Veuillez choisir le destinataire");
+			String nom = nm.nextLine();
+			System.out.println("Veuillez entrer le salaire");
+			int sl = nm.nextInt();
+			System.out.println("Versement de salaire sur compte externe de :" + nom + " le salaire est de : " + sl);
+
+		
+	}	
+	
+	String nomEmploye;
+	String prenomEmploye;
+	int nbCompteemploye;
+	
+	//Constructeur
+	public Employe(String nom,String prenom, int nbcompte) {
+		nomEmploye = nom;
+		prenomEmploye = prenom;
+		nbCompteemploye = nbcompte;
+	}
+}

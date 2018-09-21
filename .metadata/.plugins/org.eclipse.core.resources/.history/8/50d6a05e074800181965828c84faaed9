@@ -1,0 +1,19 @@
+package partie2;
+import java.util.ArrayList;
+public class Banque {
+	public static void main(String args[]){
+	 ArrayList<Employe> tableau = new ArrayList<Employe>();
+		final Employe employe1 = new Employe("marc","michou",15472);
+		final Employe employe2 = new Employe("benoit","jean",78456);
+		tableau.add(employe1);
+		tableau.add(employe2);
+		System.out.println(employe1.nomEmploye);
+		System.out.println(employe2.nomEmploye);
+		employe1.verserSalaire();
+		 employe2.verserSalaire();
+}
+	
+public Employe getEmploye() {
+return employe1;	}
+
+}

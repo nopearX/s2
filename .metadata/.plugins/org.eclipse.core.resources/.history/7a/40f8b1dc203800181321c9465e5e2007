@@ -1,0 +1,24 @@
+package dupont;
+import Pasquier.*;
+
+public class Rec extends FormeGeometrique{
+	double lo;
+	double la;
+	
+double perimetre() {
+	return 2 *(la + lo);
+}
+double surface() {
+	return la * lo;
+}
+@Override
+public double Perimetre() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+@Override
+public double Surface() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+}

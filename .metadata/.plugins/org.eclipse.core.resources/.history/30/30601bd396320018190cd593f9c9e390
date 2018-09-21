@@ -1,0 +1,29 @@
+package partie3;
+
+public class Volaille {
+	
+	double poids;
+	public int numID;
+	
+	Volaille(double poids, int Id){
+		this.poids = poids;
+		this.numID = Id;
+	}
+	
+	void changePoids(double np) {
+		poids=np;
+	}
+	
+	double prix() {
+		return();
+	}
+	
+	boolean assezGrosse() {
+		return false;
+	}
+	
+	public double getPoids() {
+		return this.poids;
+	}
+}
+

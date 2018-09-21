@@ -1,0 +1,14 @@
+package partie2;
+import java.util.ArrayList;
+public class Banque {
+	public static void main(String args[]){
+		 ArrayList<Employe> tableau = new ArrayList<Employe>();
+		 Employe employe1 = new Employe("marc","michou",15472);
+		Employe employe2 = new Employe("benoit","jean",78456);
+		tableau.add(employe1);
+		tableau.add(employe2);
+		
+		employe1.verserSalaire();
+		 employe2.verserSalaire();
+}
+	}

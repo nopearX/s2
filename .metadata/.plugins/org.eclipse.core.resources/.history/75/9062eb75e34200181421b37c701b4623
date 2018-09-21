@@ -1,0 +1,9 @@
+package partie2;
+
+public class ClientInterne extends salarie {
+	public Compte compte;
+	public void verserSalaire() {
+		
+	}
+}
+

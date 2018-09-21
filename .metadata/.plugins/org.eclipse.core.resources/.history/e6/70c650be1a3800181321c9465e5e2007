@@ -1,0 +1,37 @@
+package Pasquier;
+import java.util.Scanner;
+abstract public class FormeGeometrique {
+double x;
+double y;
+
+void Deplacer() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("veuillez saisir une coordonnées:");
+	int str = sc.nextInt();
+	x = str;	
+	System.out.println("veuillez saisir une coordonnées:");
+	str = sc.nextInt();	
+	y = str;
+	System.out.println("les nouvelles cooredonnées sont x: " + x + " y: " + y);	
+}
+
+void AfficherPosition() {
+	System.out.println("x: " + x + " y: " + y);
+}
+
+abstract double getX() {
+	return x;
+}
+
+double getY() {
+	return y;
+}
+
+abstract void Perimetre();
+abstract void Surface();
+	
+}
+//Est-ce que votre programme peut s’exécuter avec uniquement les classes Editeur et la classe abstraite FormeGeometrique ? 
+//non il manque des choses
+//Que faut-il d’autre ?
+//il faut encore faire les formes

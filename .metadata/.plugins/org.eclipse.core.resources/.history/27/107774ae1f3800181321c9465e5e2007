@@ -1,0 +1,14 @@
+package dupont;
+import Pasquier.*;
+
+public class Rec {
+	double lo;
+	double la;
+	
+double perimetre() {
+	return 2 *(la + lo);
+}
+double surface() {
+	return la * lo;
+}
+}

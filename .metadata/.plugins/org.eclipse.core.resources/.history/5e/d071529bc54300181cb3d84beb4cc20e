@@ -1,0 +1,18 @@
+package partie2;
+
+public class Employe extends salarie {
+	public void verserSalaire() {
+		
+	}
+	
+	String nomEmploye;
+	String prenomEmploye;
+	int nbCompteemploye;
+	
+	//Constructeur
+	public Employe(String nom,String prenom, int nbcompte) {
+		nomEmploye = nom;
+		prenomEmploye = prenom;
+		nbCompteemploye = nbcompte;
+	}
+}

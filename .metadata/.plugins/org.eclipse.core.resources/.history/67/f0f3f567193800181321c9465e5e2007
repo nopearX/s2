@@ -1,0 +1,21 @@
+package Pasquier;
+import scanner
+abstract public class FormeGeometrique {
+double x;
+double y;
+
+void Deplacer() {
+	
+	x = x;
+	y = y;
+	
+}
+
+void AfficherPosition() {
+	System.out.println("x: " + x + " y: " + y);
+}
+
+abstract void Perimetre();
+abstract void Surface();
+	
+}

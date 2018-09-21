@@ -1,0 +1,20 @@
+package dupont;
+import Pasquier.*;
+public class TestDupont{
+	  public static void main (String args[]) {
+
+	    // M. Dupont cree un rectangle 
+	Rec rectangle = new Rec();
+	    // M. Dupont appelle les methodes developpees par M. Pasquier 
+	    // Il est *oblige* de passer a la methode afficherStats un objet
+	//instance d'une classe implementant la classe abstraite FormeGeometrique
+	    Editeur ed = new Editeur ();
+	    ed.afficherStats(rectangle));
+
+	    // Changer les coordonnées de la forme en appelant la méthode déplacer
+
+	     // Demander de nouveau d’afficher des statistiques sur cette forme
+
+	    // Idem avec un cercle 
+	  }
+	}

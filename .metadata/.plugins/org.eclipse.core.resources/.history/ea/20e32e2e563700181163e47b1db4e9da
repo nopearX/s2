@@ -1,0 +1,5 @@
+package Pasquier;
+
+abstract public class FormeGeometrique {
+
+}

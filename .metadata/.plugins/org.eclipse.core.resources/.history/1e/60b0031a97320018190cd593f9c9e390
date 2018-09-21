@@ -1,0 +1,96 @@
+package partie3;
+import java.util.ArrayList;
+import java.util.Scanner; 
+
+
+	
+class Elevage{
+Volaille[] tab = new Volaille[100];
+int nbBetes = 0;
+
+void ajouter(Volaille v){
+tab[nbBetes] = v;
+nbBetes++;}
+
+Volaille rechercher(int id){
+for(int i=0; i<nbBetes; i++){
+if (tab[i].identite == id){
+	return tab[i];}}
+return null;
+}
+
+void changePoids(int id,double np){rechercher(id).changePoids(np);}
+
+double evaluerBetesAAbattre(){
+double res = 0;
+for (int i=0; i<nbBetes; i++){
+if (tab[i].assezGrosse()){
+res = res+tab[i].prix();}}
+
+return res;
+}
+
+Volaille[] envoyerALAbattoir(){
+	
+Volaille[] res = new Volaille[100];
+
+int nb = 0;
+int i = 0;
+
+while (i < nbBetes){
+Terminal.ecrireChar(’+’);
+if (tab[i].assezGrosse()){
+res[nb] = tab[i];
+nb++;
+tab[i]=tab[nbBetes-1];
+nbBetes--;}
+else{
+i++;
+}}
+return res;}
+
+void ecrire(){
+for (int i=0; i<nbBetes; i++){
+Terminal.ecrireStringln("" + tab[i].identite + "" +	tab[i].poids + "" +	tab[i].prix());}}}
+
+
+
+
+package partie3;
+
+public class Ferme {
+    
+    //----------------------------------------------------
+    public static void main(String[] args){
+        // Creer et ajouter quelques animaux
+        Elevage laFerme = new Elevage();
+        for    (int i=0; i<15; i++){
+            laFerme.ajouter(new Poulet(0.250,150+i));
+        }
+        
+        for(int i=0; i<15; i++){
+            laFerme.ajouter(new Canard(0.250,380+i));
+        }
+        
+        for (int i=0; i<10; i++){
+            laFerme.ajouter(new Poulet(0.250,700+i));
+        }        
+        laFerme.ajouter(new Canard(0.750,825));
+
+        // Changer le poids de quelques animaux
+        for (int i=0; i<8; i++){
+            laFerme.changePoids(155+i,1.3);
+            laFerme.changePoids(382+i,1.55);
+        }
+        
+        // Afficher l'état du volailler
+        laFerme.ecrire();
+        System.out.println("liste des animaux a abattre: ");
+        System.out.println(laFerme.afficherBetesAAbattre());
+        laFerme.envoyerALAbattoir(); // Retourne aussi un tableau avec les betes abattues
+        laFerme.ecrire();
+        
+        System.out.println("Valeur des animaux a abattre: ");
+        System.out.println(laFerme.evaluerBetesAAbattre());
+    }
+}

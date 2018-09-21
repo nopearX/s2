@@ -1,0 +1,10 @@
+package partie2;
+
+public class Banque {
+	public void main(String[] args){
+		Employe employe1 = new Employe("marc","michou",15472);
+		Employe employe2 = new Employe("benoit","jean",78456);
+
+		 employe1.verserSalaire();
+		 employe2.verserSalaire();
+		 }}

@@ -1,0 +1,179 @@
+package ex1_perimetre.ecouteurImbrique;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class PerimetreObjetEcouteurImbrique extends JPanel {
+	// Définir des actions pour chaque bouton
+	protected String CALCULER_ACTION = "CALCULER";
+	protected String NETTOYER_ACTION = "NETTOYER";
+	
+	// Déclarer les composants en tant qu'attribut
+	protected JLabel lLongeur ;
+	protected JLabel lLargeur ;
+	protected JTextField txtLongeur ;
+	protected JTextField txtLargeur ;
+	protected JLabel lblResultat ;
+	protected JLabel lblValResultat ;
+	protected JButton bCalculer ;
+	protected JButton bNettoyer ;
+
+	// Constructeur 
+	PerimetreObjetEcouteurImbrique () {
+		// Créer les composants
+		lLongeur = new JLabel ("Longueur:");
+		lLargeur = new JLabel ("Largeur:");
+		txtLongeur = new JTextField (20);
+		txtLargeur = new JTextField (20);
+		lblResultat = new JLabel ("Resultat:");
+		lblValResultat = new JLabel ("0");
+		
+		// Pour les boutons, on choisit de leur affecter une action
+		/// on pourrait aussi simplement tester le texte qui est affiché sur les boutons
+		bCalculer = new JButton ("Calculer");
+		bCalculer.setActionCommand(CALCULER_ACTION);
+		bNettoyer = new JButton ("Nettoyer");	
+		bNettoyer.setActionCommand(NETTOYER_ACTION);
+
+		// Fixer la mise en page
+		setLayout(new GridLayout (4, 2));
+
+		// Centrer les labels
+		lLongeur.setHorizontalAlignment(JLabel.CENTER);
+		lLargeur.setHorizontalAlignment(JLabel.CENTER);
+		lblResultat.setHorizontalAlignment(JLabel.CENTER);
+	
+		// Ajouter les composants
+		add(lLongeur);
+		add(txtLongeur);
+		add(lLargeur);
+		add(txtLargeur);
+		add(lblResultat);
+		add(lblValResultat);
+		add(bCalculer);
+		add(bNettoyer);
+		
+		// Créer une instance de la classe imbriquée Ecouteur
+		Ecouteur e = new Ecouteur ();
+		bCalculer.addActionListener(e);
+		bNettoyer.addActionListener(e);
+	}
+	
+	class Ecouteur implements ActionListener {
+				public void actionPerformed(ActionEvent e) {
+					System.out.println("on a cliqué");
+					JButton bouton = (JButton) e.getSource ();
+					if (e.getActionCommand().equals(getCALCULER_ACTION())) {
+						// Récupérer les valeurs de la longueur et de la largeur
+						double largeur = Double.parseDouble(getTxtLargeur().getText());
+						double longueur = Double.parseDouble(getTxtLongeur().getText());
+						double resultat = 2 * (largeur + longueur);
+						getLblValResultat().setText(""+resultat);
+						
+					} else if (e.getActionCommand().equals(getNETTOYER_ACTION())) {
+						// Vider les champs de texte
+						getTxtLargeur().setText("");
+						getTxtLongeur().setText("");			
+					}		
+				}
+			};
+			
+	public static void main(String[] args) {
+		// Creer une fenetre
+		JFrame fenetre = new JFrame ("Perimetre");
+		fenetre.setSize (300, 300);
+		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		// Créer un panneau global
+		PerimetreObjetEcouteurImbrique perimetre = new PerimetreObjetEcouteurImbrique();
+			
+		// Ajouter le bouton dans un des conteneurs de la fenetre
+		fenetre.add(perimetre);
+				
+		// Afficher la fenetre
+		fenetre.setVisible(true);
+	}
+
+	public String getCALCULER_ACTION() {
+		return CALCULER_ACTION;
+	}
+
+	public void setCALCULER_ACTION(String cALCULER_ACTION) {
+		CALCULER_ACTION = cALCULER_ACTION;
+	}
+
+	public String getNETTOYER_ACTION() {
+		return NETTOYER_ACTION;
+	}
+
+	public void setNETTOYER_ACTION(String nETTOYER_ACTION) {
+		NETTOYER_ACTION = nETTOYER_ACTION;
+	}
+
+	public JLabel getlLongeur() {
+		return lLongeur;
+	}
+
+	public void setlLongeur(JLabel lLongeur) {
+		this.lLongeur = lLongeur;
+	}
+
+	public JLabel getlLargeur() {
+		return lLargeur;
+	}
+
+	public void setlLargeur(JLabel lLargeur) {
+		this.lLargeur = lLargeur;
+	}
+
+	public JTextField getTxtLongeur() {
+		return txtLongeur;
+	}
+
+	public void setTxtLongeur(JTextField txtLongeur) {
+		this.txtLongeur = txtLongeur;
+	}
+
+	public JTextField getTxtLargeur() {
+		return txtLargeur;
+	}
+
+	public void setTxtLargeur(JTextField txtLargeur) {
+		this.txtLargeur = txtLargeur;
+	}
+
+	public JLabel getLblResultat() {
+		return lblResultat;
+	}
+
+	public void setLblResultat(JLabel lblResultat) {
+		this.lblResultat = lblResultat;
+	}
+
+	public JLabel getLblValResultat() {
+		return lblValResultat;
+	}
+
+	public void setLblValResultat(JLabel lblValResultat) {
+		this.lblValResultat = lblValResultat;
+	}
+
+	public JButton getbCalculer() {
+		return bCalculer;
+	}
+
+	public void setbCalculer(JButton bCalculer) {
+		this.bCalculer = bCalculer;
+	}
+
+	public JButton getbNettoyer() {
+		return bNettoyer;
+	}
+
+	public void setbNettoyer(JButton bNettoyer) {
+		this.bNettoyer = bNettoyer;
+	}
+}

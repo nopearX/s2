@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home" version="1.8.0_171">
+<bootpath>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/resources.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jsse.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jce.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/charsets.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jfr.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Users/gregoryarnal/Library/Java/Extensions"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext"/>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/Network/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/usr/lib/java"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\jeux\ja" version="1.8.0_161">
+<bootpath>
+<entry path="D:\jeux\ja\lib\resources.jar"/>
+<entry path="D:\jeux\ja\lib\rt.jar"/>
+<entry path="D:\jeux\ja\lib\sunrsasign.jar"/>
+<entry path="D:\jeux\ja\lib\jsse.jar"/>
+<entry path="D:\jeux\ja\lib\jce.jar"/>
+<entry path="D:\jeux\ja\lib\charsets.jar"/>
+<entry path="D:\jeux\ja\lib\jfr.jar"/>
+<entry path="D:\jeux\ja\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\jeux\ja\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\jeux\ja\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre1.8.0_161" version="1.8.0_161">
+<bootpath>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_161\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_161\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

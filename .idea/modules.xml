@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EX-01/EX-01.iml" filepath="$PROJECT_DIR$/EX-01/EX-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-02/EX-02.iml" filepath="$PROJECT_DIR$/EX-02/EX-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-03/EX-03.iml" filepath="$PROJECT_DIR$/EX-03/EX-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-05/EX-05.iml" filepath="$PROJECT_DIR$/EX-05/EX-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-06/EX-06.iml" filepath="$PROJECT_DIR$/EX-06/EX-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-07/EX-07.iml" filepath="$PROJECT_DIR$/EX-07/EX-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-08/EX-08.iml" filepath="$PROJECT_DIR$/EX-08/EX-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-09/EX-09.iml" filepath="$PROJECT_DIR$/EX-09/EX-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-10/EX-10.iml" filepath="$PROJECT_DIR$/EX-10/EX-10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX-04/exo4.iml" filepath="$PROJECT_DIR$/EX-04/exo4.iml" />
+    </modules>
+  </component>
+</project>

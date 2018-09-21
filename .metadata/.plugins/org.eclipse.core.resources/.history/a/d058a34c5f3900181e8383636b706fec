@@ -1,0 +1,30 @@
+package dupont;
+import java.util.Scanner;
+
+import Pasquier.*;
+
+public class Rec extends FormeGeometrique{
+	double lo = 7;
+	double la;
+	
+	public void modifRec() {
+		Scanner mc = new Scanner(System.in);
+		System.out.println("Veuillez entrer la longueur");
+		int str = mc.nextInt();
+		lo = str;
+		System.out.println("Veuillez entrer la largeur");
+		str = mc.nextInt();
+		la = str;
+	}
+
+@Override
+public double Perimetre() {
+	// TODO Auto-generated method stub
+	return 2 *(la + lo);
+}
+@Override
+public double Surface() {
+	// TODO Auto-generated method stub
+	return la * lo;
+}
+}
